@@ -6,10 +6,10 @@ CFLAGS_WIN = -lusb-1.0 -lreadline
 all:
 		@echo 'ERROR: no platform defined.'
 		@echo 'LINUX USERS: make linux'
-		@echo 'MAC OS X USERS: make macosx'
+		@echo 'MAC OS X USERS: make macos'
 	 	@echo 'WINDOWS USERS: make win'
-macosx:	
-		@echo 'Buildling iRecovery (Mac Os X)'
+macos:	
+		@echo 'Buildling iRecovery (macos)'
 		@$(CC) irecovery.c -o irecovery $(CFLAGS_OSX)
 		@echo 'Successfully built iRecovery'
 linux:
